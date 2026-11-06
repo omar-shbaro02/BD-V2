@@ -1,0 +1,148 @@
+{
+  "allocation": {
+    "ACT_NOW": [
+      "C01",
+      "C04",
+      "C05"
+    ],
+    "DEFERRED_CAPACITY": [
+      "C02"
+    ],
+    "DEFERRED_PRIORITY": [
+      "C03"
+    ],
+    "INVESTIGATE": []
+  },
+  "case_expectations": {
+    "C01": {
+      "gate": "PROCEED",
+      "qualification": "QUALIFIED"
+    },
+    "C02": {
+      "gate": "PROCEED",
+      "need": "PROVISIONAL",
+      "qualification": "QUALIFIED"
+    },
+    "C03": {
+      "constraint": "contactability_does_not_raise_priority",
+      "gate": "PROCEED",
+      "qualification": "QUALIFIED"
+    },
+    "C04": {
+      "constraint": "demand_does_not_reduce_quality",
+      "gate": "PROCEED",
+      "qualification": "QUALIFIED"
+    },
+    "C05": {
+      "gate": "PROCEED",
+      "limitation": "source_dependency_disclosed",
+      "qualification": "QUALIFIED"
+    },
+    "C06": {
+      "gate": "CONTRADICTION_BLOCK",
+      "qualification": "INDETERMINATE_PENDING_MATERIAL_REVIEW"
+    },
+    "C07": {
+      "gate": "EVIDENCE_REQUIRED",
+      "substantive_assessment": false
+    },
+    "C08": {
+      "gate": "HARD_EXCLUSION",
+      "scope": "LOCAL"
+    },
+    "C09": {
+      "qualification": "FURTHER_INVESTIGATION_REQUIRED",
+      "restricted_fact_consumed": false
+    },
+    "C10": {
+      "qualification": "FURTHER_INVESTIGATION_REQUIRED",
+      "reassessment_required": true
+    }
+  },
+  "comparison_order": [
+    "C01",
+    "C04",
+    "C02",
+    "C05",
+    "C03"
+  ],
+  "expected_rule_refs": [
+    "stage15-base-cases",
+    "minimum-evidence-precedence",
+    "pairwise-completeness",
+    "capacity-feasibility"
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "material_invariants": [
+    "priority:C02>C05",
+    "allocation:C05_may_use_residual_capacity",
+    "all_unresolved_candidates_explicit"
+  ],
+  "pairwise_relations": [
+    [
+      "C01",
+      "C04",
+      "ABOVE"
+    ],
+    [
+      "C01",
+      "C02",
+      "ABOVE"
+    ],
+    [
+      "C01",
+      "C05",
+      "ABOVE"
+    ],
+    [
+      "C01",
+      "C03",
+      "ABOVE"
+    ],
+    [
+      "C04",
+      "C02",
+      "ABOVE"
+    ],
+    [
+      "C04",
+      "C05",
+      "ABOVE"
+    ],
+    [
+      "C04",
+      "C03",
+      "ABOVE"
+    ],
+    [
+      "C02",
+      "C05",
+      "ABOVE"
+    ],
+    [
+      "C02",
+      "C03",
+      "ABOVE"
+    ],
+    [
+      "C05",
+      "C03",
+      "ABOVE"
+    ]
+  ],
+  "pursuit_demand_hours": {
+    "C01": "2.0",
+    "C02": "1.5",
+    "C03": "1.0",
+    "C04": "3.0",
+    "C05": "1.0"
+  },
+  "schema_version": "1.0",
+  "snapshot_members": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05"
+  ]
+}

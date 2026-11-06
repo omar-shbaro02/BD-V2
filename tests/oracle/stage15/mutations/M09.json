@@ -1,0 +1,15 @@
+{
+  "expected": {
+    "decision_owner": "UNRESOLVED",
+    "fit_unchanged": true,
+    "need_unchanged": true,
+    "next_action_type": "EVIDENCE_GATHERING"
+  },
+  "expected_rule_refs": [
+    "stage15-m09",
+    "governed-concept-separation"
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "mutation_id": "M09",
+  "schema_version": "1.0"
+}

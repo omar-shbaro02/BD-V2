@@ -1,0 +1,30 @@
+{
+  "expected": {
+    "allocation": {
+      "ACT_NOW": [
+        "C01",
+        "C12",
+        "C02"
+      ],
+      "DEFERRED_CAPACITY": [
+        "C04"
+      ]
+    },
+    "comparison_order": [
+      "C01",
+      "C12",
+      "C04",
+      "C02",
+      "C05",
+      "C03"
+    ],
+    "historical_snapshot_unchanged": true
+  },
+  "expected_rule_refs": [
+    "stage15-m02",
+    "governed-concept-separation"
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "mutation_id": "M02",
+  "schema_version": "1.0"
+}

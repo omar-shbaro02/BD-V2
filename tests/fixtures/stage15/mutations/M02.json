@@ -1,0 +1,98 @@
+{
+  "base_fixture_version": "stage15-synthetic-v1.0.0",
+  "changes": {
+    "add_candidate": {
+      "candidate_id": "a40ef708-41f4-5896-b647-b97ba6ef6c3c",
+      "case_id": "C12",
+      "company_name": "Synthetic Keystone Partners",
+      "missing_material_facts": [],
+      "next_action": "Prepare a bounded internal evidence brief for review.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C12-01",
+          "provenance": "Project-authored synthetic evidence for C12; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C12-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C12-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The core workflow strongly matches the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C12-02",
+          "provenance": "Project-authored synthetic evidence for C12; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C12-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C12-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A current material Need is directly documented.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C12-03",
+          "provenance": "Project-authored synthetic evidence for C12; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C12-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C12-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "decision_owner",
+          "content": "An operations executive owns the workflow.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C12-04",
+          "provenance": "Project-authored synthetic evidence for C12; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C12-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C12-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "2.0",
+      "segment_claim": "Synthetic business-services company"
+    },
+    "captured_comparison_order": [
+      "C01",
+      "C12",
+      "C04",
+      "C02",
+      "C05",
+      "C03"
+    ],
+    "new_snapshot_revision": 2,
+    "new_universe_revision": 2
+  },
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "mutation_id": "M02",
+  "schema_version": "1.0",
+  "title": "New qualified candidate C12"
+}

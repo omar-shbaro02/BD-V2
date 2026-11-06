@@ -1,0 +1,32 @@
+{
+  "frozen_business_rules_version": "implementation-pack-2026-10-09",
+  "created_at": "2026-10-09",
+  "approved_for_implementation_by": "frozen-implementation-pack",
+  "prompts": {
+    "market_discovery": {
+      "prompt_version": "1.0.0",
+      "role_file": "market_discovery.md",
+      "content_digest": "e5e430d6af8511c84e095058de7bb61a1395d6938ba7294044c7cf38f103057b"
+    },
+    "evidence_intelligence": {
+      "prompt_version": "1.0.0",
+      "role_file": "evidence_intelligence.md",
+      "content_digest": "f5e8986bb95941dac9b264ee6b1961da2107349a349ef747ebccadf48c8eb5e3"
+    },
+    "opportunity_intelligence": {
+      "prompt_version": "1.0.0",
+      "role_file": "opportunity_intelligence.md",
+      "content_digest": "cae9bf918d2cabab6f51badfc69fd7b73c72c5c188af652a1421d5be27eeefd3"
+    },
+    "portfolio_allocation": {
+      "prompt_version": "1.0.0",
+      "role_file": "portfolio_allocation.md",
+      "content_digest": "fc4cd45fd9a54ae8a13ce425115d5ef864608bbc8724dfbd0883d880192eca4d"
+    },
+    "commercial_action": {
+      "prompt_version": "1.0.0",
+      "role_file": "commercial_action.md",
+      "content_digest": "902e6e689092e5eb8cf9d68f74226b496f57b243ecf8f893aba2a8715f3c00ef"
+    }
+  }
+}

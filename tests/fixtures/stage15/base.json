@@ -1,0 +1,719 @@
+{
+  "candidates": [
+    {
+      "candidate_id": "011164ae-d395-54aa-9b97-3eedb54ea1c7",
+      "case_id": "C01",
+      "company_name": "Synthetic Alder Operations",
+      "missing_material_facts": [],
+      "next_action": "Prepare a bounded internal evidence brief for human review.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C01-01",
+          "provenance": "Project-authored synthetic evidence for C01; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-SHARED-MARKET-01",
+            "uri_or_reference": "synthetic://stage15/SRC-SHARED-MARKET-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": "SG-SHARED-MARKET-01",
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "Uses a workflow matched by the configured offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C01-02",
+          "provenance": "Project-authored synthetic evidence for C01; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C01-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C01-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A current operational bottleneck is directly documented.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C01-03",
+          "provenance": "Project-authored synthetic evidence for C01; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C01-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C01-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "decision_owner",
+          "content": "The operations director owns the workflow.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C01-04",
+          "provenance": "Project-authored synthetic evidence for C01; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C01-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C01-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "2.0",
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "88e8b5b7-f885-5b04-8309-a41c3d31e3b3",
+      "case_id": "C02",
+      "company_name": "Synthetic Birch Systems",
+      "missing_material_facts": [
+        "Direct confirmation of current Need"
+      ],
+      "next_action": "Confirm the current operational Need.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C02-01",
+          "provenance": "Project-authored synthetic evidence for C02; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-SHARED-MARKET-01",
+            "uri_or_reference": "synthetic://stage15/SRC-SHARED-MARKET-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": "SG-SHARED-MARKET-01",
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The documented workflow matches the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C02-02",
+          "provenance": "Project-authored synthetic evidence for C02; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C02-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C02-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A need is suggested but not directly confirmed.",
+          "currentness": "CURRENT",
+          "directness": "INFERENTIAL",
+          "observation_id": "OBS-C02-03",
+          "provenance": "Project-authored synthetic evidence for C02; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C02-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C02-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "decision_owner",
+          "content": "An operations role is the likely owner.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C02-04",
+          "provenance": "Project-authored synthetic evidence for C02; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C02-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C02-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "1.5",
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "82968ac1-24dd-50b2-9482-bc164737107f",
+      "case_id": "C03",
+      "company_name": "Synthetic Cedar Connect",
+      "missing_material_facts": [],
+      "next_action": "Validate whether the occasional problem is material.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C03-01",
+          "provenance": "Project-authored synthetic evidence for C03; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C03-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C03-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "Only a moderate workflow match is documented.",
+          "currentness": "CURRENT",
+          "directness": "INFERENTIAL",
+          "observation_id": "OBS-C03-02",
+          "provenance": "Project-authored synthetic evidence for C03; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C03-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C03-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "The problem appears occasional rather than persistent.",
+          "currentness": "CURRENT",
+          "directness": "INFERENTIAL",
+          "observation_id": "OBS-C03-03",
+          "provenance": "Project-authored synthetic evidence for C03; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C03-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C03-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "contactability",
+          "content": "Several direct contact paths are documented.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C03-04",
+          "provenance": "Project-authored synthetic evidence for C03; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C03-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C03-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "1.0",
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "9c3d780f-9bbf-55d7-ab42-f7f657926f9c",
+      "case_id": "C04",
+      "company_name": "Synthetic Dogwood Works",
+      "missing_material_facts": [],
+      "next_action": "Prepare the high-effort evidence package for review.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C04-01",
+          "provenance": "Project-authored synthetic evidence for C04; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-SHARED-MARKET-01",
+            "uri_or_reference": "synthetic://stage15/SRC-SHARED-MARKET-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": "SG-SHARED-MARKET-01",
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The core workflow strongly matches the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C04-02",
+          "provenance": "Project-authored synthetic evidence for C04; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C04-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C04-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A current high-impact operational need is documented.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C04-03",
+          "provenance": "Project-authored synthetic evidence for C04; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C04-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C04-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "decision_owner",
+          "content": "A transformation lead owns the initiative.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C04-04",
+          "provenance": "Project-authored synthetic evidence for C04; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C04-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C04-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "effort",
+          "content": "A credible first action requires three hours.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C04-05",
+          "provenance": "Project-authored synthetic evidence for C04; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C04-05",
+            "uri_or_reference": "synthetic://stage15/SRC-C04-05"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "3.0",
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "d8f927ab-5dcd-5201-b551-169a5abff24f",
+      "case_id": "C05",
+      "company_name": "Synthetic Elm Advisory",
+      "missing_material_facts": [],
+      "next_action": "Seek an independent source for the echoed Need claim.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C05-01",
+          "provenance": "Project-authored synthetic evidence for C05; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C05-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C05-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A workflow issue is described by the originating record.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C05-02",
+          "provenance": "Project-authored synthetic evidence for C05; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C05-ORIGIN",
+            "uri_or_reference": "synthetic://stage15/SRC-C05-ORIGIN"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": "SG-ECHO-C05",
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A second record repeats the originating workflow claim.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C05-03",
+          "provenance": "Project-authored synthetic evidence for C05; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C05-ECHO",
+            "uri_or_reference": "synthetic://stage15/SRC-C05-ECHO"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": "SG-ECHO-C05",
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The described workflow matches the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C05-04",
+          "provenance": "Project-authored synthetic evidence for C05; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C05-04",
+            "uri_or_reference": "synthetic://stage15/SRC-C05-04"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": "1.0",
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "dec99b4f-e150-5095-bf93-fc6a9f9e2f4d",
+      "case_id": "C06",
+      "company_name": "Synthetic Fir Logistics",
+      "missing_material_facts": [
+        "Resolution of the material market-presence contradiction"
+      ],
+      "next_action": "Resolve the contradictory market-presence records.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C06-01",
+          "provenance": "Project-authored synthetic evidence for C06; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C06-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C06-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates only outside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C06-02",
+          "provenance": "Project-authored synthetic evidence for C06; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C06-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C06-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The operating model could match the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C06-03",
+          "provenance": "Project-authored synthetic evidence for C06; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C06-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C06-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": null,
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "dd388239-0531-5ef9-9dcb-c6f891a24be2",
+      "case_id": "C07",
+      "company_name": "Synthetic Grove Studio",
+      "missing_material_facts": [
+        "Admissible market presence",
+        "Fit",
+        "Need",
+        "Decision owner"
+      ],
+      "next_action": "Gather minimum admissible evidence.",
+      "observations": [
+        {
+          "admissibility": "UNKNOWN",
+          "claim_kind": "market_presence",
+          "content": "May operate in the configured market.",
+          "currentness": "UNKNOWN",
+          "directness": "INFERENTIAL",
+          "observation_id": "OBS-C07-01",
+          "provenance": "Project-authored synthetic evidence for C07; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C07-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C07-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": null,
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "2f81d85f-cced-5b48-84c1-5761fcac75c9",
+      "case_id": "C08",
+      "company_name": "Synthetic Harbor Group",
+      "missing_material_facts": [],
+      "next_action": "Retain as excluded for this decision cycle.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates exclusively outside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C08-01",
+          "provenance": "Project-authored synthetic evidence for C08; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C08-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C08-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "Its workflow could otherwise match the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C08-02",
+          "provenance": "Project-authored synthetic evidence for C08; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C08-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C08-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": null,
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "a1571d7b-e673-5456-a225-bb54c72614c6",
+      "case_id": "C09",
+      "company_name": "Synthetic Indigo Services",
+      "missing_material_facts": [
+        "Admissible confirmation of the critical Need fact"
+      ],
+      "next_action": "Investigate the critical Need through an authorized admissible source.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operates inside the configured market.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C09-01",
+          "provenance": "Project-authored synthetic evidence for C09; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C09-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C09-01"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The visible workflow matches the offer.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C09-02",
+          "provenance": "Project-authored synthetic evidence for C09; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C09-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C09-02"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "RESTRICTED",
+          "claim_kind": "critical_need",
+          "content": "A restricted record claims an urgent active Need.",
+          "currentness": "CURRENT",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C09-03",
+          "provenance": "Project-authored synthetic evidence for C09; no real company data",
+          "restricted": true,
+          "source": {
+            "source_id": "SRC-C09-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C09-03"
+          },
+          "source_date": "2026-09-30",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": null,
+      "segment_claim": "Synthetic business-services company"
+    },
+    {
+      "candidate_id": "c36c2ce0-2ca7-5852-928a-843f35347556",
+      "case_id": "C10",
+      "company_name": "Synthetic Juniper Labs",
+      "missing_material_facts": [
+        "Current market presence",
+        "Current Need"
+      ],
+      "next_action": "Refresh the materially stale evidence before reassessment.",
+      "observations": [
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "market_presence",
+          "content": "Operated inside the configured market in 2023.",
+          "currentness": "STALE",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C10-01",
+          "provenance": "Project-authored synthetic evidence for C10; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C10-01",
+            "uri_or_reference": "synthetic://stage15/SRC-C10-01"
+          },
+          "source_date": "2023-03-15",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "fit",
+          "content": "The 2023 workflow matched the offer.",
+          "currentness": "STALE",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C10-02",
+          "provenance": "Project-authored synthetic evidence for C10; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C10-02",
+            "uri_or_reference": "synthetic://stage15/SRC-C10-02"
+          },
+          "source_date": "2023-03-15",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        },
+        {
+          "admissibility": "ADMISSIBLE",
+          "claim_kind": "need",
+          "content": "A Need was documented in 2023.",
+          "currentness": "STALE",
+          "directness": "DIRECT",
+          "observation_id": "OBS-C10-03",
+          "provenance": "Project-authored synthetic evidence for C10; no real company data",
+          "restricted": false,
+          "source": {
+            "source_id": "SRC-C10-03",
+            "uri_or_reference": "synthetic://stage15/SRC-C10-03"
+          },
+          "source_date": "2023-03-15",
+          "source_dependency_group": null,
+          "source_type": "synthetic_fixture_record"
+        }
+      ],
+      "pursuit_demand_hours": null,
+      "segment_claim": "Synthetic business-services company"
+    }
+  ],
+  "configuration": {
+    "effective_date": "2026-10-19",
+    "exclusions": [
+      "Outside Northern Virginia",
+      "Consumer-only operations"
+    ],
+    "fit_dimensions": [
+      "Recurring workflow",
+      "Operational ownership",
+      "Material friction"
+    ],
+    "intended_buyer_roles": [
+      "Operations Director",
+      "Transformation Lead"
+    ],
+    "max_concurrent_pursuits": 8,
+    "offer_name": "Workflow Reliability Advisory",
+    "operator_name": "Synthetic Operator",
+    "planning_horizon": "One operating week",
+    "problem_statement": "Reduce preventable breakdowns in recurring operational workflows.",
+    "segment_filters": [
+      "Business services",
+      "20-500 synthetic employees"
+    ],
+    "target_market_boundary": "Northern Virginia synthetic business-services segment",
+    "usable_time_hours": "6.0"
+  },
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "schema_version": "1.0",
+  "synthetic_only": true
+}

@@ -1,0 +1,57 @@
+{
+  "authorization": "Generated at the user's explicit request on 2026-10-19",
+  "files": [
+    {
+      "path": "base.json",
+      "sha256": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca"
+    },
+    {
+      "path": "captured_outputs.json",
+      "sha256": "45a365907c4460aff29376898bab435d42a45caa5e472d5530c91974df697324"
+    },
+    {
+      "path": "mutations/M01.json",
+      "sha256": "412d7945aeab90f629e503d915bb7ff2997ec0b7429a413c2a5b0d461716e290"
+    },
+    {
+      "path": "mutations/M02.json",
+      "sha256": "2cfda3cc316d69a37f9584b0ddda6a04ddc8ba4e042a1659ac5a5961b7ade51d"
+    },
+    {
+      "path": "mutations/M03.json",
+      "sha256": "918845d07f6f7137a4e51289ccdbfa5d20fa29bf9c75f073606dd1234c614e6a"
+    },
+    {
+      "path": "mutations/M04.json",
+      "sha256": "b40ec151cd6dd3e48a1687d4aae4054636032c68512c2a563bc019298dfe410c"
+    },
+    {
+      "path": "mutations/M05.json",
+      "sha256": "ae7051c09571ae1530c68415e2d71f12091c2cbfe715cf5985189c9676cec5e4"
+    },
+    {
+      "path": "mutations/M06.json",
+      "sha256": "2f14633001420368b4ebb40a2599da03330e95a6e534a5bebd37a58b3e9ebbd9"
+    },
+    {
+      "path": "mutations/M07.json",
+      "sha256": "89c5badd4ee72f0b0940cae7a000e06780bdc4734a7969405756fe257eeea14b"
+    },
+    {
+      "path": "mutations/M08.json",
+      "sha256": "4f0d509bb4fe8e4b3b5568c1dec4ad3ee7ecddffe4bb8324fe519e29c687c54c"
+    },
+    {
+      "path": "mutations/M09.json",
+      "sha256": "0ed9fd6592c07be0b86f6ac3e8b164e436865b0445f687331a10aa8cd44dd58b"
+    }
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "generated_on": "2026-10-19",
+  "schema_version": "1.0",
+  "source_specification": [
+    "vai_bd_implementation_pack/08_STAGE15_CONFORMITY_TEST_PLAN.md",
+    "vai_bd_development_plan/07_TEST_AND_CONFORMITY_PLAN.md"
+  ],
+  "synthetic_only": true
+}

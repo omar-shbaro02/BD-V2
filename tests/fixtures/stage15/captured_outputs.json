@@ -1,0 +1,333 @@
+{
+  "cases": [
+    {
+      "case_id": "C01",
+      "contactability": "MEDIUM",
+      "decision_owner_status": "SUPPORTED",
+      "fit_judgment": "STRONG",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [],
+      "missing_evidence_flags": [],
+      "need_status": "SUPPORTED",
+      "qualification": "QUALIFIED",
+      "referenced_observation_ids": [
+        "OBS-C01-01",
+        "OBS-C01-02",
+        "OBS-C01-03",
+        "OBS-C01-04"
+      ]
+    },
+    {
+      "case_id": "C02",
+      "contactability": "MEDIUM",
+      "decision_owner_status": "ROLE_HYPOTHESIS",
+      "fit_judgment": "STRONG",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Need lacks direct confirmation"
+      ],
+      "missing_evidence_flags": [
+        "Direct confirmation of current Need"
+      ],
+      "need_status": "PROVISIONAL",
+      "qualification": "QUALIFIED",
+      "referenced_observation_ids": [
+        "OBS-C02-01",
+        "OBS-C02-02",
+        "OBS-C02-03",
+        "OBS-C02-04"
+      ]
+    },
+    {
+      "case_id": "C03",
+      "contactability": "HIGH",
+      "decision_owner_status": "UNRESOLVED",
+      "fit_judgment": "MODERATE",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Commercial quality remains moderate"
+      ],
+      "missing_evidence_flags": [],
+      "need_status": "PROVISIONAL",
+      "qualification": "QUALIFIED",
+      "referenced_observation_ids": [
+        "OBS-C03-01",
+        "OBS-C03-02",
+        "OBS-C03-03",
+        "OBS-C03-04"
+      ]
+    },
+    {
+      "case_id": "C04",
+      "contactability": "MEDIUM",
+      "decision_owner_status": "SUPPORTED",
+      "fit_judgment": "STRONG",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "High Pursuit Demand"
+      ],
+      "missing_evidence_flags": [],
+      "need_status": "SUPPORTED",
+      "qualification": "QUALIFIED",
+      "referenced_observation_ids": [
+        "OBS-C04-01",
+        "OBS-C04-02",
+        "OBS-C04-03",
+        "OBS-C04-04",
+        "OBS-C04-05"
+      ]
+    },
+    {
+      "case_id": "C05",
+      "contactability": "LOW",
+      "decision_owner_status": "UNRESOLVED",
+      "fit_judgment": "STRONG",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Need evidence shares one dependency group"
+      ],
+      "missing_evidence_flags": [],
+      "need_status": "SUPPORTED",
+      "qualification": "QUALIFIED",
+      "referenced_observation_ids": [
+        "OBS-C05-01",
+        "OBS-C05-02",
+        "OBS-C05-03",
+        "OBS-C05-04"
+      ]
+    },
+    {
+      "case_id": "C06",
+      "contactability": null,
+      "decision_owner_status": null,
+      "fit_judgment": null,
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": true,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Material market-presence contradiction"
+      ],
+      "missing_evidence_flags": [
+        "Resolution of the material market-presence contradiction"
+      ],
+      "need_status": null,
+      "qualification": null,
+      "referenced_observation_ids": [
+        "OBS-C06-01",
+        "OBS-C06-02",
+        "OBS-C06-03"
+      ]
+    },
+    {
+      "case_id": "C07",
+      "contactability": null,
+      "decision_owner_status": null,
+      "fit_judgment": null,
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": false
+      },
+      "material_uncertainties": [
+        "Minimum evidence not satisfied"
+      ],
+      "missing_evidence_flags": [
+        "Admissible market presence",
+        "Fit",
+        "Need",
+        "Decision owner"
+      ],
+      "need_status": null,
+      "qualification": null,
+      "referenced_observation_ids": [
+        "OBS-C07-01"
+      ]
+    },
+    {
+      "case_id": "C08",
+      "contactability": null,
+      "decision_owner_status": null,
+      "fit_judgment": null,
+      "gate_facts": {
+        "known_hard_exclusion": true,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Outside configured market"
+      ],
+      "missing_evidence_flags": [],
+      "need_status": null,
+      "qualification": null,
+      "referenced_observation_ids": [
+        "OBS-C08-01",
+        "OBS-C08-02"
+      ]
+    },
+    {
+      "case_id": "C09",
+      "contactability": "LOW",
+      "decision_owner_status": "UNRESOLVED",
+      "fit_judgment": "STRONG",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Critical fact exists only in a restricted source"
+      ],
+      "missing_evidence_flags": [
+        "Admissible confirmation of the critical Need fact"
+      ],
+      "need_status": "INSUFFICIENT",
+      "qualification": "FURTHER_INVESTIGATION_REQUIRED",
+      "referenced_observation_ids": [
+        "OBS-C09-01",
+        "OBS-C09-02",
+        "OBS-C09-03"
+      ]
+    },
+    {
+      "case_id": "C10",
+      "contactability": "LOW",
+      "decision_owner_status": "UNRESOLVED",
+      "fit_judgment": "INDETERMINATE",
+      "gate_facts": {
+        "known_hard_exclusion": false,
+        "market_boundary_valid": true,
+        "material_contradiction": false,
+        "minimum_evidence_satisfied": true
+      },
+      "material_uncertainties": [
+        "Material evidence is stale"
+      ],
+      "missing_evidence_flags": [
+        "Current market presence",
+        "Current Need"
+      ],
+      "need_status": "INSUFFICIENT",
+      "qualification": "FURTHER_INVESTIGATION_REQUIRED",
+      "referenced_observation_ids": [
+        "OBS-C10-01",
+        "OBS-C10-02",
+        "OBS-C10-03"
+      ]
+    }
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "portfolio": {
+    "allocation": {
+      "ACT_NOW": [
+        "C01",
+        "C04",
+        "C05"
+      ],
+      "DEFERRED_CAPACITY": [
+        "C02"
+      ],
+      "DEFERRED_PRIORITY": [
+        "C03"
+      ],
+      "INVESTIGATE": []
+    },
+    "comparison_order": [
+      "C01",
+      "C04",
+      "C02",
+      "C05",
+      "C03"
+    ],
+    "pairwise_relations": [
+      [
+        "C01",
+        "C04",
+        "ABOVE"
+      ],
+      [
+        "C01",
+        "C02",
+        "ABOVE"
+      ],
+      [
+        "C01",
+        "C05",
+        "ABOVE"
+      ],
+      [
+        "C01",
+        "C03",
+        "ABOVE"
+      ],
+      [
+        "C04",
+        "C02",
+        "ABOVE"
+      ],
+      [
+        "C04",
+        "C05",
+        "ABOVE"
+      ],
+      [
+        "C04",
+        "C03",
+        "ABOVE"
+      ],
+      [
+        "C02",
+        "C05",
+        "ABOVE"
+      ],
+      [
+        "C02",
+        "C03",
+        "ABOVE"
+      ],
+      [
+        "C05",
+        "C03",
+        "ABOVE"
+      ]
+    ],
+    "snapshot_members": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05"
+    ]
+  },
+  "schema_version": "1.0"
+}

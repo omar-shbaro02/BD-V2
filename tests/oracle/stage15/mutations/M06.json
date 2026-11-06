@@ -1,0 +1,14 @@
+{
+  "expected": {
+    "act_now": [],
+    "allocation_exists": false,
+    "capacity_independent_work_allowed": true
+  },
+  "expected_rule_refs": [
+    "stage15-m06",
+    "governed-concept-separation"
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "mutation_id": "M06",
+  "schema_version": "1.0"
+}

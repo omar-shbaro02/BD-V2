@@ -1,0 +1,14 @@
+{
+  "expected": {
+    "allocation_held": true,
+    "cycle_exposed": true,
+    "forced_total_order": false
+  },
+  "expected_rule_refs": [
+    "stage15-m03",
+    "governed-concept-separation"
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "mutation_id": "M03",
+  "schema_version": "1.0"
+}

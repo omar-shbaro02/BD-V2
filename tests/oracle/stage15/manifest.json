@@ -1,0 +1,48 @@
+{
+  "files": [
+    {
+      "path": "base_expected.json",
+      "sha256": "8ab21183a6860059888996e60d4eee9842f413bd26925891f2d4bb10f7cf0d9f"
+    },
+    {
+      "path": "mutations/M01.json",
+      "sha256": "906a58efa359c2fe4c6409ebff4502535563b3883f5ebbe0a6486ced76701d06"
+    },
+    {
+      "path": "mutations/M02.json",
+      "sha256": "ad8f0b81dd32f168df7d4f318dcd603ec96dee8fd6afb45be70f6029a8c9a524"
+    },
+    {
+      "path": "mutations/M03.json",
+      "sha256": "10b6528735cb49ccb2e7309705205291723f65dff0902a231b0274e3c7cab7e9"
+    },
+    {
+      "path": "mutations/M04.json",
+      "sha256": "0f65e1f036a9a7b626f588dc4b4f71d3fb4800a0be16f1f34230f1837354b637"
+    },
+    {
+      "path": "mutations/M05.json",
+      "sha256": "c916482af3cfc6530462afea872c86f2e5b58375983db89385e2f89d9ebc8431"
+    },
+    {
+      "path": "mutations/M06.json",
+      "sha256": "f3ff97595c1848a3c96b3543e4e2836f1a8a45a0253ec5d9ff026297a3157c17"
+    },
+    {
+      "path": "mutations/M07.json",
+      "sha256": "cd7e84c97a3d5afa51f93115a8027dc407d175941c92ed69b1430520a310e793"
+    },
+    {
+      "path": "mutations/M08.json",
+      "sha256": "9c5c8b04639de0b912f3f811024661b37b15e32b4be1e64e7dc8a22a677d261b"
+    },
+    {
+      "path": "mutations/M09.json",
+      "sha256": "4b1f579286ccf00d7a307d1f39d49dee326ecb32fa715a397b93b1458ae92e29"
+    }
+  ],
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "generated_on": "2026-10-19",
+  "runtime_manifest_sha256": "7bab6455b0c591e249fb471b33babea616212912ab5b44eac7c3f09e96a86e8b",
+  "schema_version": "1.0"
+}

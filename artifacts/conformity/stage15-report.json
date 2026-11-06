@@ -1,0 +1,604 @@
+{
+  "schema_version": "1.0",
+  "fixture_version": "stage15-synthetic-v1.0.0",
+  "suite_status": "PASS",
+  "required_case_ids": [
+    "BASE",
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09"
+  ],
+  "results": [
+    {
+      "case_id": "BASE",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "011164ae-d395-54aa-9b97-3eedb54ea1c7",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "88e8b5b7-f885-5b04-8309-a41c3d31e3b3",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "82968ac1-24dd-50b2-9482-bc164737107f",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "9c3d780f-9bbf-55d7-ab42-f7f657926f9c",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "d8f927ab-5dcd-5201-b551-169a5abff24f",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "dec99b4f-e150-5095-bf93-fc6a9f9e2f4d",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "dd388239-0531-5ef9-9dcb-c6f891a24be2",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "2f81d85f-cced-5b48-84c1-5761fcac75c9",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "a1571d7b-e673-5456-a225-bb54c72614c6",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        },
+        {
+          "object_id": "c36c2ce0-2ca7-5852-928a-843f35347556",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:base-portfolio"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787783Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C01",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "011164ae-d395-54aa-9b97-3eedb54ea1c7",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c01"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787845Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C02",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "88e8b5b7-f885-5b04-8309-a41c3d31e3b3",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c02"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787875Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C03",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "82968ac1-24dd-50b2-9482-bc164737107f",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c03"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787896Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C04",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "9c3d780f-9bbf-55d7-ab42-f7f657926f9c",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c04"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787915Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C05",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "d8f927ab-5dcd-5201-b551-169a5abff24f",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c05"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787932Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C06",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "dec99b4f-e150-5095-bf93-fc6a9f9e2f4d",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c06"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787952Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C07",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "dd388239-0531-5ef9-9dcb-c6f891a24be2",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c07"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787970Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C08",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "2f81d85f-cced-5b48-84c1-5761fcac75c9",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c08"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.787986Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C09",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "a1571d7b-e673-5456-a225-bb54c72614c6",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c09"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788002Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "C10",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "7de506d91238cfb358deb063aefd3ccf68761cd520ad3e92245ae02c80ca55ca",
+      "actual_output_refs": [
+        {
+          "object_id": "c36c2ce0-2ca7-5852-928a-843f35347556",
+          "object_type": "CompanyCandidate",
+          "revision": 1
+        }
+      ],
+      "expected_rule_refs": [
+        "stage15-base-cases",
+        "minimum-evidence-precedence",
+        "pairwise-completeness",
+        "capacity-feasibility"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:c10"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788017Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M01",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "412d7945aeab90f629e503d915bb7ff2997ec0b7429a413c2a5b0d461716e290",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m01",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m01"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788036Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M02",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "2cfda3cc316d69a37f9584b0ddda6a04ddc8ba4e042a1659ac5a5961b7ade51d",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m02",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m02"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788056Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M03",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "918845d07f6f7137a4e51289ccdbfa5d20fa29bf9c75f073606dd1234c614e6a",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m03",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m03"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788076Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M04",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "b40ec151cd6dd3e48a1687d4aae4054636032c68512c2a563bc019298dfe410c",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m04",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m04"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788096Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M05",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "ae7051c09571ae1530c68415e2d71f12091c2cbfe715cf5985189c9676cec5e4",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m05",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m05"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788113Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M06",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "2f14633001420368b4ebb40a2599da03330e95a6e534a5bebd37a58b3e9ebbd9",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m06",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m06"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788129Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M07",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "89c5badd4ee72f0b0940cae7a000e06780bdc4734a7969405756fe257eeea14b",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m07",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m07"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788145Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M08",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "4f0d509bb4fe8e4b3b5568c1dec4ad3ee7ecddffe4bb8324fe519e29c687c54c",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m08",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m08"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788176Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    },
+    {
+      "case_id": "M09",
+      "input_fixture_version": "stage15-synthetic-v1.0.0",
+      "input_digest": "0ed9fd6592c07be0b86f6ac3e8b164e436865b0445f687331a10aa8cd44dd58b",
+      "actual_output_refs": [],
+      "expected_rule_refs": [
+        "stage15-m09",
+        "governed-concept-separation"
+      ],
+      "status": "PASS",
+      "material_differences": [],
+      "trace_refs": [
+        "runtime:m09"
+      ],
+      "started_at": "2026-10-19T14:22:50.785067Z",
+      "completed_at": "2026-10-19T14:22:50.788207Z",
+      "code_version": "phase8-conformity-v1",
+      "prompt_versions": {
+        "captured-test-double": "stage15-synthetic-v1.0.0"
+      },
+      "model_config_id": "deterministic-captured-fixture"
+    }
+  ],
+  "started_at": "2026-10-19T14:22:50.785067Z",
+  "completed_at": "2026-10-19T14:22:50.788238Z"
+}

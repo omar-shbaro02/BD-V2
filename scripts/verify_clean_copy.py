@@ -19,6 +19,7 @@ COPY_DIRECTORIES = (
     "vai_bd_implementation_pack",
 )
 COPY_FILES = (
+    ".gitattributes",
     ".env.example",
     ".gitignore",
     "alembic.ini",

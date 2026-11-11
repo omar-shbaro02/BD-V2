@@ -1,6 +1,6 @@
 .PHONY: help install format format-check lint typecheck test-unit test-integration test-conformity conformity-report test-all hardening-scan verify-reproducibility db-up db-down migrate serve build-evidence-package
 
-PYTHON := .venv/bin/python
+PYTHON := $(if $(wildcard .venv/Scripts/python.exe),.venv/Scripts/python.exe,.venv/bin/python)
 
 help:
 	@echo "install                  Install runtime and development dependencies"

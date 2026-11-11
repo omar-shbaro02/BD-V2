@@ -3,6 +3,12 @@
 This matrix is the minimum mapping. Replace planned paths with exact symbols and
 test IDs as implementation proceeds.
 
+Implemented mapping: [`docs/traceability.json`](../docs/traceability.json) binds
+all 40 requirements below and 40 concrete domain contracts to exact code symbols
+and test IDs. The evidence builder checks symbol existence and records VERIFIED
+only for successful executed tests (including exact domain-model parameter IDs).
+The generated `traceability.json` links each row to `verification/tests.xml`.
+
 | Requirement/function | Planned implementation | Required verification |
 |---|---|---|
 | Configurable offer/market/operator/capacity | `domain/cycle.py`, cycle service | API + persistence tests; no fixture constants in policies |

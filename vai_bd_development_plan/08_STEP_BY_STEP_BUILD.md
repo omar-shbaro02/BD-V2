@@ -149,14 +149,18 @@ material tests pass.
 
 ## Phase 12 — Evidence Package v0.1
 
-- [ ] Record exact commit/version, dependency lock digest, migration head, and
+- [x] Record exact commit/version, dependency lock digest, migration head, and
   configuration profile.
-- [ ] Export repository tree, setup/run instructions, architecture and agent maps.
-- [ ] Export domain-to-code/test traceability.
-- [ ] Include fixture/oracle manifests without exposing oracle to runtime.
-- [ ] Include full conformity results, traces/log refs, failures/skips, known
+- [x] Export repository tree, setup/run instructions, architecture and agent maps.
+- [x] Export domain-to-code/test traceability.
+- [x] Include fixture/oracle manifests without exposing oracle to runtime.
+- [x] Include full conformity results, traces/log refs, failures/skips, known
   limitations, and exact remaining gaps.
-- [ ] Mark implementation-conformity PASS only if the formal pass gate is met.
+- [x] Mark implementation-conformity PASS only if the formal pass gate is met.
 
 Gate: Founder/control-room handoff is complete. Deployment and live pilot remain
 unauthorized.
+
+Phase 12 evidence: `evidence_package/generated/summary.json`,
+`traceability.json`, `verification/tests.xml`, and
+`verification/conformity-report.json`. The manifest binds every exported file.

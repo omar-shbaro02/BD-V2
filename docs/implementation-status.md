@@ -1,6 +1,6 @@
 # Implementation Status
 
-Last updated: 2026-10-19
+Last updated: 2026-11-07
 
 ## Phase 0 — Authority and inputs
 
@@ -76,7 +76,7 @@ domain coverage: 90% branch-aware
 
 ## Total project progress
 
-Current weighted completion: **98%**.
+Current weighted completion: **100%**.
 
 The fixed phase weights are:
 
@@ -475,8 +475,53 @@ The repository has no initial commit, so clean-build verification used isolated
 allowlisted source copies rather than misreporting a Git checkout. See
 [the Phase 11 hardening report](hardening-report.md).
 
-## Next
+## Phase 12 - Evidence Package v0.1
 
-Phase 12 is next: assemble the final evidence package from the now-complete
-implementation, hardening, and conformity artifacts. Total weighted completion
-is **98%**.
+Status: `COMPLETE`
+
+Delivered:
+
+- executable offline package builder with a fresh output directory requirement;
+- exact base Git commit, dirty state, project version and exported source SHA-256;
+- dependency lock digest, migration head, actual Python/PostgreSQL versions and
+  test/conformity profile records;
+- allowlisted source snapshot, repository tree, setup instructions, architecture
+  and five-specialist responsibility/prompt/tool inventory;
+- 80 domain/requirement-to-code/test traceability entries, checked against exact
+  code symbols and executed JUnit test IDs;
+- complete runtime fixture and held-out evaluator oracle packages with verified
+  manifests and binding, kept outside runtime reasoning;
+- freshly executed 20-case conformity report, serialized actuals, synthetic trace
+  references, full test results, command logs and explicit failed/skipped lists;
+- SHA-256 manifest and standalone verification command, with export scanning;
+- fail-closed acceptance: quality/dependency/authority/integration failures,
+  missing verification or any skipped test prevent PASS;
+- manifest/tamper, failure/skip, JUnit, traceability and oracle integrity tests;
+- Windows dependency markers, byte-stable fixture generation/checkouts and an
+  isolated test-database override needed to reproduce the handoff on this host.
+
+Verification evidence is generated at
+`evidence_package/generated/summary.json`, `verification/tests.xml`,
+`verification/test-results.json` and `verification/conformity-report.json`.
+Run `python scripts/build_evidence_package.py --verify evidence_package/generated`
+to check the delivered inventory and every payload digest.
+
+Final verification: 213 tests passed, no failures or skips; all 20 material
+Stage 15 cases passed; format, lint, strict typing, dependency integrity,
+hardening scan, all 80 traceability entries and package digests passed.
+
+## Handoff and remaining limitations
+
+All authorized implementation phases are complete: **100%** of the fixed plan.
+The generated package is the technical implementation-conformity evidence;
+Founder acceptance and future operating authority remain human decisions.
+
+The original Stage 15 artifact is unavailable; the authorized fictional baseline
+is used. ADRs 0001/0002 retain proposed governance decisions. Optional live-model
+smoke was not run, and deterministic doubles make no live-model quality claim.
+The API service port must be wired by a host; the default backend fails closed.
+Production identity-provider integration remains outside scope.
+
+Current Windows verification uses an isolated PostgreSQL 16 instance; PostgreSQL
+17 remains the CI/Compose target, with previous phase evidence retained as given.
+No deployment, live pilot, provider activation or external execution is authorized.

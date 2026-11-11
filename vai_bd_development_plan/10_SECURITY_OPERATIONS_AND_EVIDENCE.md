@@ -85,17 +85,21 @@ Generate a manifest with SHA-256 digests and include:
 
 ## 7. Final acceptance checklist
 
-- [ ] All frozen distinctions have separate models and visible presentation.
-- [ ] All governed objects preserve history and exact dependencies.
-- [ ] All five and only five specialist agents have typed bounded outputs.
-- [ ] Orchestrator behavior is deterministic and non-substantive.
-- [ ] Stage 15 oracle is inaccessible to runtime reasoning.
-- [ ] C01–C10 and M01–M09 pass with no material skip.
-- [ ] Human Authorization can originate only from authenticated human events.
-- [ ] External execution evaluates false in the conformity build.
-- [ ] Operator view separates Priority, Allocation, Readiness, and Authorization.
-- [ ] Evidence Package is complete, reproducible, and candid about limitations.
+- [x] All frozen distinctions have separate models and visible presentation.
+- [x] All governed objects preserve history and exact dependencies.
+- [x] All five and only five specialist agents have typed bounded outputs.
+- [x] Orchestrator behavior is deterministic and non-substantive.
+- [x] Stage 15 oracle is inaccessible to runtime reasoning.
+- [x] C01–C10 and M01–M09 pass with no material skip.
+- [x] Human Authorization can originate only from authenticated human events.
+- [x] External execution evaluates false in the conformity build.
+- [x] Operator view separates Priority, Allocation, Readiness, and Authorization.
+- [x] Evidence Package is complete, reproducible, and candid about limitations.
 
 Passing this checklist authorizes only the implementation-conformity handoff. It
 does not authorize Stage 19, deployment, a live pilot, or external execution.
 
+
+Phase 12 evidence: `evidence_package/generated/summary.json`,
+`traceability.json`, `verification/tests.xml`, and
+`verification/conformity-report.json`. The manifest binds every exported file.

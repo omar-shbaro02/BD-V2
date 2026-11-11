@@ -638,7 +638,9 @@ def oracle_mutations() -> dict[str, dict[str, Any]]:
 
 def write_json(path: Path, payload: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    path.write_text(
+        json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n"
+    )
 
 
 def digest(path: Path) -> str:
@@ -665,7 +667,9 @@ def main() -> None:
             "vai_bd_implementation_pack/08_STAGE15_CONFORMITY_TEST_PLAN.md",
             "vai_bd_development_plan/07_TEST_AND_CONFORMITY_PLAN.md",
         ],
-        "files": [{"path": str(path), "sha256": digest(RUNTIME / path)} for path in runtime_paths],
+        "files": [
+            {"path": path.as_posix(), "sha256": digest(RUNTIME / path)} for path in runtime_paths
+        ],
     }
     write_json(RUNTIME / "manifest.json", runtime_manifest)
 
@@ -680,7 +684,9 @@ def main() -> None:
         "fixture_version": VERSION,
         "generated_on": GENERATED_ON,
         "runtime_manifest_sha256": digest(RUNTIME / "manifest.json"),
-        "files": [{"path": str(path), "sha256": digest(ORACLE / path)} for path in oracle_paths],
+        "files": [
+            {"path": path.as_posix(), "sha256": digest(ORACLE / path)} for path in oracle_paths
+        ],
     }
     write_json(ORACLE / "manifest.json", oracle_manifest)
     print(f"generated {VERSION}: 10 base cases, 9 mutations, separated oracle")

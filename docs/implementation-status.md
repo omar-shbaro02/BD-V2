@@ -394,6 +394,16 @@ external actions/model calls: NOT RUN and no HTTP execution route exists
 
 ## Phase 10 — Minimal operator view
 
+Frontend expansion planning update (2026-11-11): the baseline status below is
+historical. The expanded UI and integration gates are **PLANNED / NOT DELIVERED**;
+see [the frontend product specification](../vai_bd_development_plan/11_FRONTEND_PRODUCT_SPEC.md)
+and [Bassam's implementation handoff](../vai_bd_development_plan/12_FRONTEND_IMPLEMENTATION_HANDOFF.md).
+Source inspection confirms the default application still installs
+`UnconfiguredApiBackend`, and local human authentication is not wired. Existing
+API/presentation tests do not establish that the default app serves populated
+cycle data. The expansion must wire and verify those dependencies before claiming
+a usable local end-to-end operator experience.
+
 Status: `COMPLETE`
 
 Delivered:

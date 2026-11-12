@@ -95,6 +95,14 @@ Silence and timeout leave state non-approved.
 
 ## 7. Operator view
 
+The baseline below is expanded by the
+[frontend product specification](11_FRONTEND_PRODUCT_SPEC.md) and
+[implementation handoff for Bassam](12_FRONTEND_IMPLEMENTATION_HANDOFF.md).
+The expanded plan keeps the initial delivery read-only and server-rendered;
+workflow and review forms follow separate backend-integration gates. The API
+list above is a planning surface; use `src/vai_bd/api/router.py` and generated
+OpenAPI for implemented paths and revision parameters.
+
 Build a minimal read-only, server-rendered view after the API works. For each
 cycle show:
 

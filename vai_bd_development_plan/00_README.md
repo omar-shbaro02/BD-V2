@@ -68,6 +68,8 @@ global external-action restriction remains false.
 | `08_STEP_BY_STEP_BUILD.md` | Ordered implementation checklist with acceptance gates |
 | `09_TRACEABILITY_MATRIX.md` | Requirement-to-code/test/deliverable mapping |
 | `10_SECURITY_OPERATIONS_AND_EVIDENCE.md` | Security, failure handling, local operations, and handoff package |
+| `11_FRONTEND_PRODUCT_SPEC.md` | Expanded operator screens, visual design, behavior, and acceptance scenarios |
+| `12_FRONTEND_IMPLEMENTATION_HANDOFF.md` | Bassam's implementation gates, backend integration gaps, contracts, and verification |
 
 ## Working rules
 

@@ -125,6 +125,12 @@ can approve; no endpoint executes external action.
 
 ## Phase 10 — Minimal operator view
 
+The completed checklist below records the baseline implementation. Expanded
+frontend work is specified separately in
+[the operator product specification](11_FRONTEND_PRODUCT_SPEC.md) and
+[Bassam's delivery gates F0-F3](12_FRONTEND_IMPLEMENTATION_HANDOFF.md).
+Do not treat those new deliverables as complete based on the baseline checkmarks.
+
 - [x] Add cycle list/detail and opportunity/portfolio presentation.
 - [x] Show Priority and Allocation separately.
 - [x] Show full candidate disposition, evidence limitations, contradiction,

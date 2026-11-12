@@ -41,6 +41,12 @@ conformity harness, and machine-readable passing report.
 
 ## Local development
 
+Frontend implementation handoff for Bassam:
+[operator product specification](vai_bd_development_plan/11_FRONTEND_PRODUCT_SPEC.md)
+and [technical delivery plan](vai_bd_development_plan/12_FRONTEND_IMPLEMENTATION_HANDOFF.md).
+These expand the server-rendered operator UI and document the adapter/authentication
+work needed for a usable local workflow. They are planned work, not delivered UI.
+
 Prerequisites:
 
 - Python 3.11 or 3.12 (CI uses 3.11);
@@ -63,6 +69,21 @@ The health endpoint is `GET /health`.
 The governed API contract is described in [the API guide](docs/api-guide.md) and
 the generated [OpenAPI document](docs/openapi.json).
 The read-only operator view begins at `GET /operator`.
+The default app currently uses `UnconfiguredApiBackend`: `/health` can succeed
+while operator/API data routes return 503. A concrete service adapter must be
+wired through `create_app(api_backend=...)` to serve cycle data. Local workflow
+mutations also need a trusted authentication adapter; the existing signed test
+adapter is restricted to test/conformity profiles.
+
+After installing the Python dependencies, you can also start the development
+server with `npm run dev` from this repository or its parent directory
+(`BD-V2(Test)`, with the parent npm shortcut installed). No npm dependencies are
+needed. The launcher uses `.venv` when present, otherwise Python from `PATH`;
+set `PYTHON` to override the executable. The server runs at
+`http://127.0.0.1:8000/operator`. Extra Uvicorn options can be passed with
+`npm run dev -- --port 8001`.
+
+If PowerShell blocks `npm.ps1`, use `npm.cmd run dev` instead.
 
 Offline quality and hardening commands:
 

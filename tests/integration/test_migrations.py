@@ -4,8 +4,7 @@ from alembic import command
 from alembic.config import Config
 from alembic.migration import MigrationContext
 from sqlalchemy import Engine, inspect
-
-TEST_DATABASE_URL = "postgresql+psycopg://vai_bd:vai_bd@localhost:5432/vai_bd"
+from tests.integration.conftest import TEST_DATABASE_URL
 
 
 def test_all_migrations_reach_expected_head(migrated_engine: Engine) -> None:

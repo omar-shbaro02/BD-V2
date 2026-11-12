@@ -34,18 +34,28 @@ recommendation, a draft, silence, and timeout never constitute authorization.
 
 ## Status
 
-Phases 0 through 11 are complete, representing 98% of the fixed weighted plan;
+Phases 0 through 12 are complete, representing 100% of the fixed weighted plan;
 see [the implementation status](docs/implementation-status.md). Stage 15 has an
 authorized, reproducible synthetic dataset, separately held oracle, complete
-conformity harness, and machine-readable passing report.
+conformity harness, and machine-readable passing report. Evidence Package v0.1
+is available at `evidence_package/generated/HANDOFF.md`, with current results in
+`evidence_package/generated/summary.json`.
 
 ## Local development
 
+<<<<<<< HEAD
 Frontend implementation handoff for Bassam:
 [operator product specification](vai_bd_development_plan/11_FRONTEND_PRODUCT_SPEC.md)
 and [technical delivery plan](vai_bd_development_plan/12_FRONTEND_IMPLEMENTATION_HANDOFF.md).
 These expand the server-rendered operator UI and document the adapter/authentication
 work needed for a usable local workflow. They are planned work, not delivered UI.
+=======
+From the parent `Bussiness_Dev2` directory, `npm run dev` starts the existing
+operator frontend and API together, connects/starts the configured PostgreSQL
+service and applies migrations. See [the parent launcher instructions](../README.md)
+for prerequisites, configuration and shutdown behavior. The individual commands
+below remain available.
+>>>>>>> 8399291414b025086be7d48cf08e811595ce73de
 
 Prerequisites:
 
@@ -100,7 +110,29 @@ smoke run is optional and remains disabled unless an authorized key and model
 are explicitly provided. Stage 15 conformity uses captured deterministic test
 doubles by default; it makes no live-model claim.
 
-`make build-evidence-package` remains fail-closed until Phase 12. To stop local
+`make build-evidence-package` builds the final offline reviewer handoff. It runs
+quality, dependency, authority, full database and conformity checks, exports the
+source snapshot and held-out evaluator materials, and creates a SHA-256 manifest.
+Any failed or skipped test prevents PASS. The default output is
+`evidence_package/generated/`; an existing output is preserved. For subsequent
+runs, choose a fresh directory with
+`python scripts/build_evidence_package.py --output evidence_package/generated/run-2`.
+Verify a delivered package without rerunning checks using
+`python scripts/build_evidence_package.py --verify evidence_package/generated`.
+The package includes the evaluator oracle; never mount it into runtime inputs.
+
+On Windows PowerShell, create `.venv` with `python -m venv .venv`, use
+`.\.venv\Scripts\python.exe` for each Python command, copy the environment with
+`Copy-Item .env.example .env`, and run scripts directly if Make is unavailable.
+The lock includes platform markers for Windows dependencies.
+Integration tests migrate a **dedicated disposable test database**. To use an
+isolated server, set `TEST_DATABASE_URL` before testing or building the package;
+otherwise they inherit `DATABASE_URL` when set, or use the documented local
+`vai_bd` database on port 5432.
+The package records the actual test PostgreSQL version. PostgreSQL 17 remains
+the CI/Compose target; the local Windows verification uses installed PostgreSQL 16.
+
+To stop local
 services without deleting governed database data, use `docker compose stop`.
 Do not use `docker compose down -v` unless permanent volume deletion is explicitly
 intended and a suitable backup exists.

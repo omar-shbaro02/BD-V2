@@ -1,0 +1,4 @@
+# Digest-bound artifacts must have identical bytes on every checkout platform.
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf

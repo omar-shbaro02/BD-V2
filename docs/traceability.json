@@ -1,0 +1,842 @@
+[
+  {
+    "requirement": "Configurable offer/market/operator/capacity",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:DecisionCycleContext"
+    ],
+    "tests": [
+      "tests/unit/api/test_governed_api.py::test_full_governed_cycle_through_api"
+    ]
+  },
+  {
+    "requirement": "Candidate universe and coverage limitations",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:CandidateUniverseCoverageState"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_market_guard_rejects_unsupported_exhaustive_claim_and_unknown_source"
+    ]
+  },
+  {
+    "requirement": "Evidence provenance/directness/currentness/admissibility",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/evidence.py:EvidenceRecord"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_currentness_uses_configured_rule_and_preserves_unknown"
+    ]
+  },
+  {
+    "requirement": "Source dependence",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/evidence.py:independent_eligible_evidence"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_evidence_independence_and_admissibility_are_enforced"
+    ]
+  },
+  {
+    "requirement": "Contradiction preservation",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/evidence.py:bidirectional_contradictions"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_contradictions_are_bidirectional"
+    ]
+  },
+  {
+    "requirement": "Missing evidence is not negative",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/eligibility.py:evaluate_eligibility"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_missing_evidence_never_becomes_disqualification"
+    ]
+  },
+  {
+    "requirement": "Minimum-evidence/hard-eligibility gate",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/eligibility.py:evaluate_eligibility"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_gate_precedence"
+    ]
+  },
+  {
+    "requirement": "Fit separate from Need",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:CompanyOfferFit"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_opportunity_guard_preserves_separate_provisional_need_judgment"
+    ]
+  },
+  {
+    "requirement": "Owner separate from Contactability",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:DecisionOwnerHypothesis"
+    ],
+    "tests": [
+      "tests/conformity/test_stage15_suite.py::test_every_mutation_is_independent_and_reproducible"
+    ]
+  },
+  {
+    "requirement": "Contactability not attractiveness",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:ContactabilityAssessment"
+    ],
+    "tests": [
+      "tests/conformity/test_stage15_suite.py::test_every_base_candidate_is_materially_adjudicated"
+    ]
+  },
+  {
+    "requirement": "Claim-scoped confidence",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:ConfidenceAssessment"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_opportunity_guard_rejects_invented_evidence_reference"
+    ]
+  },
+  {
+    "requirement": "Four qualification outcomes",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:QualificationOutcome"
+    ],
+    "tests": [
+      "tests/conformity/test_stage15_suite.py::test_every_base_candidate_is_materially_adjudicated"
+    ]
+  },
+  {
+    "requirement": "Pursuit Demand not quality",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:PursuitDemand"
+    ],
+    "tests": [
+      "tests/conformity/test_stage15_suite.py::test_all_base_cases_mutations_and_portfolio_meanings_pass"
+    ]
+  },
+  {
+    "requirement": "Immutable qualified snapshot",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:QualifiedUniverseSnapshot"
+    ],
+    "tests": [
+      "tests/integration/test_repositories.py::test_snapshot_membership_is_revision_specific_and_historical"
+    ]
+  },
+  {
+    "requirement": "Canonical pairs/inverses",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/comparisons.py:generate_pairs"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_pair_generation_is_exact_deterministic_and_order_independent"
+    ]
+  },
+  {
+    "requirement": "Tie/near-tie/indeterminate/cycle",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/comparisons.py:analyze_comparisons"
+    ],
+    "tests": [
+      "tests/unit/policies/test_evidence_and_comparisons.py::test_comparison_completeness_and_cycle_exposure"
+    ]
+  },
+  {
+    "requirement": "Comparative Priority separate from Allocation",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:ComparativePriorityState"
+    ],
+    "tests": [
+      "tests/unit/operator/test_presentation.py::test_cycle_list_and_detail_are_semantic_escaped_and_read_only"
+    ]
+  },
+  {
+    "requirement": "Capacity-bounded allocation",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/capacity.py:validate_allocation"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_capacity_validates_zero_residual_and_concurrency_independently"
+    ]
+  },
+  {
+    "requirement": "Residual-capacity inclusion without reorder",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/capacity.py:validate_allocation"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_valid_allocation_allows_smaller_lower_item_when_top_cannot_fit"
+    ]
+  },
+  {
+    "requirement": "Alternative portfolios for review",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:AlternativePortfolio"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips"
+    ]
+  },
+  {
+    "requirement": "Next credible action classification",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/actions.py:CommercialActionOpportunity"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_commercial_action_draft_remains_typed_recommendation_only"
+    ]
+  },
+  {
+    "requirement": "Release readiness not Authorization",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/release.py:evaluate_release_readiness"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_release_readiness_is_independent_of_authorization"
+    ]
+  },
+  {
+    "requirement": "Human-only authorization",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/services/lifecycle.py:HumanReviewService"
+    ],
+    "tests": [
+      "tests/unit/api/test_governed_api.py::test_auth_path_idempotency_hold_and_no_execution_surface"
+    ]
+  },
+  {
+    "requirement": "Exact action/scope/revision matching",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/execution.py:evaluate_execution_eligibility"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_execution_requires_exact_current_approval"
+    ]
+  },
+  {
+    "requirement": "Supersession isolation",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/envelopes.py:GovernedObject"
+    ],
+    "tests": [
+      "tests/integration/test_repositories.py::test_authorization_events_are_append_only_and_revision_isolated"
+    ]
+  },
+  {
+    "requirement": "External execution disabled",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/config.py:Settings"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_execution_is_always_false_in_conformity_profile"
+    ]
+  },
+  {
+    "requirement": "Bounded reassessment",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/reassessment.py:propagate_reassessment"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_reassessment_only_propagates_through_material_dependency_paths"
+    ]
+  },
+  {
+    "requirement": "Capacity change does not change quality",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/policies/reassessment.py:propagate_reassessment"
+    ],
+    "tests": [
+      "tests/unit/policies/test_control_policies.py::test_capacity_reassessment_cannot_change_fit_need_or_evidence"
+    ]
+  },
+  {
+    "requirement": "Local/portfolio/whole-cycle holds",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/orchestrator/cycle_runner.py:CycleRunner"
+    ],
+    "tests": [
+      "tests/unit/orchestrator/test_control.py::test_local_and_portfolio_holds_do_not_hold_whole_cycle"
+    ]
+  },
+  {
+    "requirement": "Exactly five agents",
+    "source": "vai_bd_implementation_pack/05_AGENT_IO_CONTRACTS.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/agents/definitions.py:SpecialistAgent"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_exactly_five_agents_have_typed_outputs_and_no_capabilities"
+    ]
+  },
+  {
+    "requirement": "Deterministic non-agent Orchestrator",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/orchestrator/dependencies.py:require_phase_inputs"
+    ],
+    "tests": [
+      "tests/unit/orchestrator/test_control.py::test_phase_preconditions_require_exact_current_types_and_proceed_gate"
+    ]
+  },
+  {
+    "requirement": "Typed outputs only",
+    "source": "vai_bd_implementation_pack/05_AGENT_IO_CONTRACTS.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/agents/definitions.py:SpecialistAgent"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_contracts_reject_forbidden_free_form_authorization_field"
+    ]
+  },
+  {
+    "requirement": "Strict tool allowlists",
+    "source": "vai_bd_implementation_pack/05_AGENT_IO_CONTRACTS.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/agents/definitions.py:SpecialistAgent"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_exactly_five_agents_have_typed_outputs_and_no_capabilities"
+    ]
+  },
+  {
+    "requirement": "Prompt injection boundary",
+    "source": "vai_bd_implementation_pack/05_AGENT_IO_CONTRACTS.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/agents/prompts.py:load_prompt_bundles"
+    ],
+    "tests": [
+      "tests/unit/agents/test_agent_shells.py::test_untrusted_evidence_cannot_close_prompt_delimiter"
+    ]
+  },
+  {
+    "requirement": "Prompt/model/run traceability",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:AgentRun"
+    ],
+    "tests": [
+      "tests/integration/test_repositories.py::test_agent_run_audit_allows_one_started_to_terminal_transition"
+    ]
+  },
+  {
+    "requirement": "Failure does not advance workflow",
+    "source": "vai_bd_implementation_pack/06_ORCHESTRATOR_CONTROL_LOGIC.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/services/executor.py:AgentPhaseExecutor"
+    ],
+    "tests": [
+      "tests/integration/test_hardening.py::test_failed_mutation_rolls_back_and_persists_only_redacted_failure"
+    ]
+  },
+  {
+    "requirement": "Oracle isolation",
+    "source": "vai_bd_implementation_pack/08_STAGE15_CONFORMITY_TEST_PLAN.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/conformity/suite.py:serialize_runtime_execution"
+    ],
+    "tests": [
+      "tests/unit/conformity/test_stage15_fixtures.py::test_oracle_is_loaded_only_after_runtime_result_is_serialized"
+    ]
+  },
+  {
+    "requirement": "C01\u2013C10 and M01\u2013M09",
+    "source": "vai_bd_implementation_pack/08_STAGE15_CONFORMITY_TEST_PLAN.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/conformity/suite.py:ConformityReport"
+    ],
+    "tests": [
+      "tests/conformity/test_stage15_suite.py::test_all_base_cases_mutations_and_portfolio_meanings_pass"
+    ]
+  },
+  {
+    "requirement": "Operator decision view",
+    "source": "vai_bd_implementation_pack/07_API_STORAGE_AND_SERVICE_BOUNDARIES.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/operator/render.py:render_cycle_detail"
+    ],
+    "tests": [
+      "tests/unit/operator/test_presentation.py::test_cycle_list_and_detail_are_semantic_escaped_and_read_only"
+    ]
+  },
+  {
+    "requirement": "Evidence Package v0.1",
+    "source": "vai_bd_implementation_pack/09_IMPLEMENTATION_ROADMAP_FOR_CODEX.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "scripts/build_evidence_package.py:build"
+    ],
+    "tests": [
+      "tests/unit/test_evidence_package.py::test_manifest_covers_every_exported_file"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ActionScope",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/actions.py:ActionScope"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ActionScope]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ActionScope]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CommercialActionOpportunity",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/actions.py:CommercialActionOpportunity"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CommercialActionOpportunity]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CommercialActionOpportunity]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: RecommendationReleaseReadiness",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/actions.py:RecommendationReleaseReadiness"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[RecommendationReleaseReadiness]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[RecommendationReleaseReadiness]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: AgentRun",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:AgentRun"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[AgentRun]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[AgentRun]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: WorkflowTransition",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:WorkflowTransition"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[WorkflowTransition]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[WorkflowTransition]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: MaterialImpactDecision",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:MaterialImpactDecision"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[MaterialImpactDecision]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[MaterialImpactDecision]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ExternalExecutionEligibilityDecision",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:ExternalExecutionEligibilityDecision"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ExternalExecutionEligibilityDecision]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ExternalExecutionEligibilityDecision]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ConformityCaseResult",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/audit.py:ConformityCaseResult"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ConformityCaseResult]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ConformityCaseResult]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: HumanAuthorizationEvent",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/authorization.py:HumanAuthorizationEvent"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[HumanAuthorizationEvent]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[HumanAuthorizationEvent]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: HumanAuthorizationCurrentState",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/authorization.py:HumanAuthorizationCurrentState"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[HumanAuthorizationCurrentState]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[HumanAuthorizationCurrentState]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: AgentReviewRequest",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/authorization.py:AgentReviewRequest"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[AgentReviewRequest]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[AgentReviewRequest]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: OfferProfile",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:OfferProfile"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[OfferProfile]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[OfferProfile]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: DecisionCycleContext",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:DecisionCycleContext"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[DecisionCycleContext]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[DecisionCycleContext]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CapacityEnvelope",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:CapacityEnvelope"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CapacityEnvelope]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CapacityEnvelope]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CandidateUniverseCoverageState",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:CandidateUniverseCoverageState"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CandidateUniverseCoverageState]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CandidateUniverseCoverageState]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CompanyCandidate",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/cycle.py:CompanyCandidate"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CompanyCandidate]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CompanyCandidate]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: GovernedObject",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/envelopes.py:GovernedObject"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[GovernedObject]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[GovernedObject]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: EvidenceRecord",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/evidence.py:EvidenceRecord"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[EvidenceRecord]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[EvidenceRecord]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: MissingEvidenceFlag",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/evidence.py:MissingEvidenceFlag"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[MissingEvidenceFlag]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[MissingEvidenceFlag]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ContradictionGroup",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/evidence.py:ContradictionGroup"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ContradictionGroup]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ContradictionGroup]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: MinimumEvidenceHardEligibilityGateResult",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/evidence.py:MinimumEvidenceHardEligibilityGateResult"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[MinimumEvidenceHardEligibilityGateResult]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[MinimumEvidenceHardEligibilityGateResult]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ConfidenceAssessment",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:ConfidenceAssessment"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ConfidenceAssessment]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ConfidenceAssessment]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CompanyOfferFit",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:CompanyOfferFit"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CompanyOfferFit]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CompanyOfferFit]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: NeedHypothesis",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:NeedHypothesis"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[NeedHypothesis]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[NeedHypothesis]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: DecisionOwnerHypothesis",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:DecisionOwnerHypothesis"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[DecisionOwnerHypothesis]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[DecisionOwnerHypothesis]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ContactabilityAssessment",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:ContactabilityAssessment"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ContactabilityAssessment]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ContactabilityAssessment]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: QualificationOutcome",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:QualificationOutcome"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[QualificationOutcome]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[QualificationOutcome]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CommercialOpportunityCase",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:CommercialOpportunityCase"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CommercialOpportunityCase]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CommercialOpportunityCase]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: PursuitDemand",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:PursuitDemand"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[PursuitDemand]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[PursuitDemand]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: OpportunityState",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/opportunity.py:OpportunityState"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[OpportunityState]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[OpportunityState]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: QualifiedUniverseSnapshot",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:QualifiedUniverseSnapshot"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[QualifiedUniverseSnapshot]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[QualifiedUniverseSnapshot]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CanonicalPairwiseComparison",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:CanonicalPairwiseComparison"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CanonicalPairwiseComparison]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CanonicalPairwiseComparison]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: PriorityRelation",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:PriorityRelation"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[PriorityRelation]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[PriorityRelation]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ComparativePriorityState",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:ComparativePriorityState"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ComparativePriorityState]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ComparativePriorityState]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: AlternativePortfolio",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:AlternativePortfolio"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[AlternativePortfolio]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[AlternativePortfolio]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: CapacityBoundedAllocationCase",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/portfolio.py:CapacityBoundedAllocationCase"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[CapacityBoundedAllocationCase]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[CapacityBoundedAllocationCase]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ObjectRevisionRef",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/refs.py:ObjectRevisionRef"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ObjectRevisionRef]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ObjectRevisionRef]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: SourceRef",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/refs.py:SourceRef"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[SourceRef]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[SourceRef]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: ExcludedOrUnresolvedRef",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/refs.py:ExcludedOrUnresolvedRef"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[ExcludedOrUnresolvedRef]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[ExcludedOrUnresolvedRef]"
+    ]
+  },
+  {
+    "requirement": "Domain contract: AllocationMemberReason",
+    "source": "vai_bd_implementation_pack/03_DOMAIN_SCHEMA.md; vai_bd_development_plan/09_TRACEABILITY_MATRIX.md",
+    "code": [
+      "src/vai_bd/domain/refs.py:AllocationMemberReason"
+    ],
+    "tests": [
+      "tests/unit/domain/test_models.py::test_every_domain_model_accepts_valid_data_and_round_trips[AllocationMemberReason]",
+      "tests/unit/domain/test_models.py::test_every_domain_model_rejects_unknown_fields[AllocationMemberReason]"
+    ]
+  }
+]

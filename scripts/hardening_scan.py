@@ -50,7 +50,7 @@ def scan_repository(root: Path = ROOT) -> tuple[Finding, ...]:
             content = path.read_text(encoding="utf-8")
         except UnicodeDecodeError:
             continue
-        relative = str(path.relative_to(root))
+        relative = path.relative_to(root).as_posix()
         for category, pattern in SECRET_PATTERNS.items():
             if pattern.search(content):
                 findings.add(Finding(category, relative))
